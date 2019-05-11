@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title color="dark">
+      Feed
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- <ul>
+    <li *ngFor="let post of allPosts">{{ post }}</li>
+  </ul> -->
+
+  <ion-card *ngFor="let post of allPosts">
+    <ion-card-content>{{ post }}</ion-card-content>
+  </ion-card>
+</ion-content>

@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>
+      {{ pageTitle }}
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <!-- <h1>This is my first mobile app</h1>
+    <h2>{{secondTitle}}</h2>
+    <h2>{{third}}</h2> -->
+    <!-- <button class="btn btn-primary">This is a button</button> -->
+    <ion-card>
+      
+      <ion-item>
+          <ion-label position="stacked">Create a post</ion-label>
+          <ion-input [(ngModel)]="postText"></ion-input>
+        </ion-item>
+    </ion-card>
+ 
+
+    <ion-button (click)="create();" color="primary">Create Post</ion-button>
+   
+</ion-content>
